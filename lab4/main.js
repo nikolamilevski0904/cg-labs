@@ -5,7 +5,7 @@ const scene = new THREE.Scene()
 scene.background = new THREE.Color(0xFFFFFF)
 
 const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000)
-camera.position.set(8, 6, 12) // on +z side, so -x is on the left of the screen
+camera.position.set(4, 5, 9) // on +z side, so -x is on the left of the screen
 const renderer = new THREE.WebGLRenderer({ antialias: true })
 renderer.setSize(innerWidth, innerHeight)
 document.body.appendChild(renderer.domElement)
@@ -125,6 +125,7 @@ window.addEventListener('keydown', (event) => {
 })
 
 const controls = new OrbitControls(camera, renderer.domElement)
+controls.target.set(0, 3.5, 0) // look at the middle of the arm and hand, not the floor
 controls.enableDamping = true // smooth camera motion, needs update() every frame
 
 function animate() {
