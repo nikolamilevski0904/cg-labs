@@ -1,6 +1,6 @@
 # Computer Graphics labs (SEEU)
 
-Six three.js labs in one Vite project.
+Seven three.js labs in one Vite project.
 
 ## Run
 
@@ -18,3 +18,4 @@ npm run build    # production build into dist/
 | 4 | `/lab4/` | Robotic hand (nested joints). Keys: Q/A shoulder, W/S elbow, E/D wrist, R/F fingers, T/G thumb |
 | 5 | `/lab5/` and `/lab5/gltf.html` | Octahedron from BufferGeometry (F toggles non-indexed), see `lab5/LAB5.md`; GLTF viewer |
 | 6 | `/lab6/` | PLY model x3 with perspective / orthographic cameras (Space switches) |
+| 7 | `/lab7/` | Raycaster picking, hover and dragging on the floor, see `lab7/LAB7.md` |
